@@ -69,3 +69,48 @@ class CozyCozyToInsert(CozyCozyData):
     _id: str
     platform: str
     scraped_at: str
+
+
+
+class CozyCozyFlatData(BaseModel):
+    _id: str
+    type: str
+    accommodationId: int
+    uid: str
+    title: str
+    subTitle: str
+    subTitleDetails: Optional[str]
+    surfaceText: Optional[str]
+    locationWarning: bool
+    locationText: Optional[str]
+    price_value: Optional[float]
+    price_currencyCode: Optional[str]
+    price_min: Optional[int]
+    price_max: Optional[int]
+    price_indicative: Optional[bool]
+    price_instantBooking: Optional[bool]
+    price_text: Optional[str]
+    price_shortText: Optional[str]
+    price_deeplinkUrl: Optional[str]
+    price_mapSearchId: Optional[str]
+    price_requiresLogin: Optional[bool]
+    providerName: Optional[str]
+    providerCode: Optional[str]
+    providerLogoCode: Optional[str]
+    providerText: Optional[str]
+    bedRoomCount: Optional[int]
+    resultCount: Optional[int]
+    cityName: Optional[str]
+    firstUrls: Optional[List[str]]
+    lastUrl: Optional[str]
+    thumbnails_count: Optional[int]
+    thumbnails_instantBooking: Optional[bool]
+    ratingCount: Optional[int]
+    ratingScore: Optional[int]
+    coordinates_latitude: float
+    coordinates_longitude: float
+    cancellationCategory: int
+    cancellationPolicy: int
+    prioritizedAccommodation: bool
+    platform: str
+    scraped_at: str
